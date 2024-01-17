@@ -15,6 +15,7 @@ def Calculator(num1: int, num2: int, method: str) -> int:
     if method == 'x': return num1 * num2
     if method == 'div': return num1 / num2
     if method == 'mod': return num1 % num2
+    return 0
 
 def MainMenu():
     try:
