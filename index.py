@@ -2,8 +2,6 @@ import os
 import time
 import sys
 
-init(autoreset=True)
-
 LINE = "------------------------------------------------"
 REALPASSWORD = "12345"
 
