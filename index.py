@@ -42,10 +42,9 @@ def MainMenu():
             if(Inum2 < 1 or Inum2 > 10): return os.system("cls"); MainMenu()
             if Inum1 < Inum2:
                 res = f'{Inum2} {"-" if selected == 2 else "div" if selected == 4 else "mod"} {Inum1} = {Calculator(Inum2, Inum1, "-" if selected == 2 else "div" if selected == 4 else "mod")}'
-                PrintHeader(res)
             else:
                 res = f'{Inum1} {"-" if selected == 2 else "div" if selected == 4 else "mod"} {Inum2} = {Calculator(Inum1, Inum2, "-" if selected == 2 else "div" if selected == 4 else "mod")}'
-                PrintHeader(res)
+            PrintHeader(res)
             MainMenu()
         else:
             os.system("cls")
